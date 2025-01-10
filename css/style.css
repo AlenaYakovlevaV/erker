@@ -75,7 +75,7 @@ footer {
   /* justify-content: flex-end; */
 }
 
-.block-contacts a:first-child {
+.block-contacts a {
   margin-right: 1rem;
 }
 

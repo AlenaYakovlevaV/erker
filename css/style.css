@@ -1,6 +1,7 @@
 :root {
   --main-bg-color: #00137F;
   --main-color: white;
+  --main-color-text: #000c53a6;
 }
 
 * {
@@ -234,6 +235,7 @@ main {
 .carousel-item {
   flex: 1 0 35%;
   width: 150px;
+  position: relative;
   /* aspect-ratio: ; */
   flex-flow: column nowrap;
   display: flex;
@@ -305,3 +307,27 @@ footer {
   padding: 0 1rem;
   margin-bottom: 0.5rem;
 }
+
+.info-block {
+  /* position: relative; */
+}
+
+.info-content {
+  position: absolute;
+  z-index: 1000;
+  background-color: #10154f;
+  width: 400px;
+  color: white;
+  padding: .5rem;
+  border-radius: .5rem;
+  border: 1px solid white;
+  font-size: small;
+}
+
+.carousel-text {
+  font-size: x-small;
+  border: 1px solid #000c53;
+  padding: .5rem;
+  border-radius: .5rem;
+}
+

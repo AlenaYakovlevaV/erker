@@ -1,14 +1,17 @@
-// const nav = document.querySelector('.block-navigation');
-// const navItems = nav.querySelectorAll('li');
+const nav = document.querySelector('.block-navigation');
+const navItems = nav.querySelectorAll('li');
+const menuAdptvBlock = document.querySelector('.menu-adaptive-block');
+const menuAdptvItems = menuAdptvBlock.querySelectorAll('li'); 
+const url = window.location.href;
+console.log(url);
 
-// navItems?.forEach((item) => {
-//   item.addEventListener('click', () => {
-//     navItems.forEach(item => {
-//       item.classList.remove('nav-select');
-//     });
-//     item.classList.add('nav-select');
-//   })
-// })
+if (url.includes('index')) {
+  menuAdptvItems[0].classList.add('selected');
+  navItems[0].classList.add('selected');
+} else if (url.includes('solutions')) {
+  menuAdptvItems[1].classList.add('selected');
+  navItems[1].classList.add('selected');
+}
 
 // let currentIndex = 0;
 // const carouselItems = document.querySelectorAll('.carousel-item');
@@ -108,12 +111,13 @@ mainTabItem?.addEventListener('mouseout', () => {
 })
 
 const menuAdaptiveBtn = document.querySelector('.menu-adaptive-open');
-const menuAdaptive = document.querySelector('.menu-adaptive-block');
+const menuAdaptive = document.querySelector('.side-menu-area');
 const menuAdaptiveItems = menuAdaptive.querySelectorAll('a');
+const menuAdaptiveClose = document.querySelector('.menu-adaptive-close');
 
 console.log('menuAdaptiveBtn: ', menuAdaptiveBtn);
 menuAdaptiveBtn?.addEventListener('click', () => {
-  menuAdaptive.classList.toggle('hide');
+  menuAdaptive.classList.remove('hide');
 })
 
 menuAdaptiveItems.forEach(item => {
@@ -122,6 +126,6 @@ menuAdaptiveItems.forEach(item => {
   })
 })
 
-// menuAdaptive?.addEventListener('mouseout', () => {
-//   menuAdaptive.classList.add('hide');
-// })
+menuAdaptiveClose?.addEventListener('click', () => {
+  menuAdaptive.classList.add('hide');
+})

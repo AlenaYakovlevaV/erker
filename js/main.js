@@ -38,7 +38,7 @@ const menuContent = document.querySelector('.side-menu-block');
 const closeMenuBtn = document.querySelector('.menu-exp');
 const openMenuBtn = document.querySelector('.menu-open');
 
-menu.addEventListener('click', () => {
+menu?.addEventListener('click', () => {
   menuContent.classList.toggle('hide');
   closeMenuBtn.classList.toggle('hide');
   openMenuBtn.classList.toggle('hide');
@@ -99,10 +99,29 @@ const volmaText = ``;
 const popupMenu = document.querySelector('.popup-menu');
 const mainTabItem = document.querySelector('#main-tab');
 
-mainTabItem.addEventListener('mouseover', () => {
+mainTabItem?.addEventListener('mouseover', () => {
   popupMenu.classList.remove('hide');
 })
 
-mainTabItem.addEventListener('mouseout', () => {
+mainTabItem?.addEventListener('mouseout', () => {
   popupMenu.classList.add('hide');
 })
+
+const menuAdaptiveBtn = document.querySelector('.menu-adaptive-open');
+const menuAdaptive = document.querySelector('.menu-adaptive-block');
+const menuAdaptiveItems = menuAdaptive.querySelectorAll('a');
+
+console.log('menuAdaptiveBtn: ', menuAdaptiveBtn);
+menuAdaptiveBtn?.addEventListener('click', () => {
+  menuAdaptive.classList.toggle('hide');
+})
+
+menuAdaptiveItems.forEach(item => {
+  item.addEventListener('click', () => {
+    menuAdaptive.classList.add('hide');
+  })
+})
+
+// menuAdaptive?.addEventListener('mouseout', () => {
+//   menuAdaptive.classList.add('hide');
+// })

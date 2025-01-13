@@ -35,6 +35,27 @@ header {
   background-color: #000c53a6;
 }
 
+.popup-menu {
+  position: absolute;
+  /* background-color: #000c53c7; */
+  z-index: 1000;
+  padding: .5rem 0;
+  /* width: 250px; */
+}
+
+.popup-menu-item {
+  height: 1.3rem !important;
+  padding: .5rem;
+  z-index: 1000;
+  width: 250px;
+  background-color: #000c53de;
+}
+
+.popup-menu-item:hover {
+  /* border: 1px solid white; */
+  background-color: #000c53;
+}
+
 header, .footer-block {
   /* width: 100%; */
   
@@ -46,6 +67,7 @@ header, .footer-block {
 }
 
 footer {
+  bottom: 0;
   background-color: #000c53;
 }
 
@@ -53,12 +75,36 @@ footer {
   width: 100%;
 }
 
+
+
 .block-logo {
   /* width: 80%; */
   /* margin: 0 auto; */
   display: flex;
   /* flex-direction: column; */
-  align-items: flex-end;
+  align-items: flex-start;
+  position: relative;
+}
+
+.logo_dv {
+  width: 150px;
+  position: absolute;
+  right: -100px;
+  bottom: 25px;
+}
+
+.footer-logo_block {
+  text-align: end;
+  position: relative;
+  opacity: .2;
+}
+
+.footer-logo_dv {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 500px;
+  min-width: 150px;
 }
 
 /* .block-logo span {
@@ -95,16 +141,17 @@ a {
   justify-content: space-around;
 }
 
-.block-navigation li:not(:last-child) {
+.block-navigation .main-menu-item:not(:last-child) {
   margin-right: 1rem;
 }
 
 .block-navigation li {
   height: 1rem;
   text-transform: uppercase;
+  z-index: 100;
 }
 
-.block-navigation li:hover {
+.block-navigation .main-menu-item:hover {
   transform: translateY(-.2rem);
 }
 
@@ -331,3 +378,64 @@ footer {
   border-radius: .5rem;
 }
 
+.solution-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.solution-item {
+  padding: .5rem;
+  max-width: 30%;
+  min-width: 200px;
+  
+}
+
+.solution-icon {
+  /* max-width: 350px;  */
+  max-height: 400px;
+  /* max-width: 20vw; */
+  min-width: 200px;
+  /* outline: 1px solid coral; */
+  width: fit-content;
+  margin-bottom: 1rem;
+}
+
+.solution-title {
+  text-transform: uppercase;
+  color: #000c53;
+  margin-bottom: 1rem;
+}
+
+.solution-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
+}
+
+.solution-download-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: .5rem;
+}
+
+.solution-link {
+  color: #000c5377;
+}
+
+.solution-details {
+  /* display: inline-block;
+  width: 100%; */
+  text-align: end; 
+}
+
+.back {
+  display: flex;
+  align-items: center;
+}
+
+.solution-description {
+  color: var(--main-color-text);
+  /* color: #00137F; */
+}

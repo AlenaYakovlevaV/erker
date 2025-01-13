@@ -12,23 +12,51 @@
   <header>
     <div class="block-logo">
       <img id="logo" src="./images/LOGO.png" class="logo" alt="Логотип Эркер">
+      <img id="logo_dv" src="./images/dv_logo.png" class="logo_dv" alt="Логотип Docsvision">
       <!-- <span>СИСТЕМЫ ЭЛЕКТРОННОГО ДОКУМЕНТООБОРОТА</span> -->
     </div>
     <ul class="block-navigation">
-      <li>
-        <a style="display: flex; align-items: center;" href="#home">
+      <li id="main-tab" class="main-menu-item">
+        <a style="display: flex; align-items: center;" href="./index.html">
           <img style="width: 25px; margin-right: 5px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtklEQVR4nO2UDQrCMAyFewotXnE77nB6mk8KVaNu1v6kG5gHhUJJ3pdHiXOmCgGHcLYy98A5Ht/b/AhMPHUFTj0nn6Px/Hb3PSe/hKnjP5jUk2DBXLzpQvDFXB2CH8zVIMgwbw5BgXkzCCrMqyFoYF4MweuSocViiT1JLis+1yu15qK31HISwCgoVwFIKFFz7z2ukQ4yMgWA0HtIBOYeBTlvJTUGYAlYAvtPIGfhlNTsF8D0V7oBFlC/UjQlsXIAAAAASUVORK5CYII=" alt="home">
           Главная
-
+          <ul class="popup-menu hide">
+            <li class="popup-menu-item">
+              <a style="display: flex; align-items: center;" href="#about-us">
+                <img style="width: 25px; margin-right: 5px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAyUlEQVR4nO3UXQoCIRSGYaEl9ANtLVpFLa+biIi56KqCqLUYb0QzIKbmGQ9MkN+lOD6cDx1jav4+QEM8R7cgYBvZ14iLBHakM3L2nnL2iQNMgXMCXrRrd2fNFsEeegEeAXjZrt1UYD7RWejAQBv9qyaAxiYBNiowb7S7MFdgLq1QXDWRSb3bfsg4Jx/mC5r4bu+/2WwYmPRBY4gEXuegudNJ4DGwetWtMV3xD2QQmIJaS2HbF/l9GOVaJbDVRCocTa160HdcYxTyBAEPWfl/8ilbAAAAAElFTkSuQmCC" alt="growth-and-flag">
+                ПОЧЕМУ МЫ
+              </a>
+            </li>
+            <li class="popup-menu-item">
+              <a style="display: flex; align-items: center;" href="#services">
+                <img style="width: 25px; margin-right: 5px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAj0lEQVR4nO2SQQqDMBBF5x61u9Kri0h39VYt6AleCcxCCkK/hsaEeZBFBn7yyI9ZENQAmahfwArlLQQ4WwVs7Lc+XXsCKu0JULoCSguo1C9wFFmAg7QjYCI5BRbPdKLA+zsHXH02Kwc9PPRUJIB+nfM1+WxUBO7Ai3ykl7n9LJAALsCwqmMPKTvKlweB/ZEPgr5s9jLbdYsAAAAASUVORK5CYII=" alt="purchase-order">
+                УСЛУГИ
+              </a>
+            </li>
+            <li class="popup-menu-item">
+              <a style="display: flex; align-items: center;" href="#customers">
+                <img style="width: 25px; margin-right: 5px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAmklEQVR4nO2UUQrCMBAFcwXPYg9h8GL2lEI09hhTFlqokjS7K0Q/Ol+Fycuy4dEQDrwAV+AJPIBo9ZoBElxJVq8Z8EYw+r/YIC6XJOBi9b+BnWbgdOp3xenUzcDpum8Qa83A6foAnIARuG9Wle+buK9ywABM1HkB58LlrZy4QQ5m2uTCAF3uowE1UmGALrdpQPUQ+/8iU+6gPzMmLeysyuxjvQAAAABJRU5ErkJggg==" alt="crowd">
+                НАШИ ЗАКАЗЧИКИ
+              </a>
+            </li>
+          </ul>
+        </a>
+        
+      </li>
+      <li class="main-menu-item">
+        <a style="display: flex; align-items: center;" href="./solutions.html">
+          <!-- <img style="width: 25px; margin-right: 5px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAADQ0lEQVR4nO2ZwU4UQRRFy41/ICIgjszIN4jBv2N0XOgG4i8oDKIu1IUYjWgUdCULlwYTjBGHAffmmJd+DUUzPd1MV/fUtH0TEvKm6ta7XVXdVe8aUyCABrAK/AF+Ag+AGVNGEIjtchq/gWumbABWVOAT4CIwATzT2IopGzie3UtW7LLGOqZsAA5U3EQpBAPngTvAD/pj0eqzlNB2F2gJt/ENBIkl4S+wYPVpaiwJLeMbCGZDcMMh53w408Y3oBgV3syoBDtCNcO+gLLvYYKz8UM5NOh5OHViwDngDfA2RdsQezqOXDjqpkgAs7ZI+zsbaTcGvJczcyQ+p+2/WbEXwKb0ibTt9Z3eK/TCAazpwM+Bq/LE9dS0EBG7re0+RPrf0/hdK/ZRY9u2aOGU05mOU9MxBe0iBR/qoFN92nyOESDL+bv+dj3mAX3qwzutbbpmRATPaXxHxA8gWGZasG+KAkHVAt1307rUZEk3YwRs9VvOCQ/oFnBf9qxUR4CXw1jSs/p2TvPS2gLWrdhOdDlrfENmNuVLq1N4lYTgs9TWi/1R6SZFv3f6d7ScE9qH6OqdWsZsmGGDlIJ94c2MSrAjVDPsC/gP9/Cu5jbvkPOmzyWeFvnhtvG0TNuyZtoF/C3TVhhlcHyMdGJzalFgI0P/ulZbfunNre2sCkJwS3Fqc4YEjqst+05EEzw9wWO1OcfV8hzY5swoOLyaitU6qfk81djyIJxxl/1xKybe7sCuX0bB3WjxwcrnYBDOOMG2zTk5RMH7PQRPpRbMEGzOfoJzz4ch2JwJgvPNh4JsTuC1lnuk7BNiTMs6r6x2+eZDn6edcZATvCoWq7Bn/78Z1895PhQn+ALwpccy+xr5ApRDcIzoE2JLJ1hg7dtTJdlSCk7CyAgmOHM/0trxQVbBWmzv6CWh4ZVgggN9eAKKdSJScuVij+JY8JrlNdXUA1q0Dwdn4GpG7FHhFKz6JPhQaa5k4YnhFtGZ7VEcCw73bC0LTwz3jI+C20qzrgnWo/bpGZf0ksWz7uOSruf80spsj+JSsCV62eFnKeRxUq/CteDYAQrql5qXSrAbVDOcEtWSzmEP7/pkc+aeD57ZnLnng2c2Z975/AMXK+GnEFLOzAAAAABJRU5ErkJggg==" alt="external-solutions-devops-outline-outline-juicy-fish"> -->
+          <img style="width: 25px; margin-right: 5px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAABECAYAAAA4E5OyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFOUlEQVR4nO2ba4xdUxTHjw71KGWikuqQVjOJ6Hg0pkT5oDMeQVJSqh5J8aFoGyRK4pEYEoQm0gbxKB+KFCWitN4VGhFVlVaooUmVqPezlLaU/mTlrhP77jnn3PPa5z7m/JOd3P1ae+//3WettfdZx/NKDA4AQ4FRQLs3WAF0AfcA/VRjG7ACuHpQEAQcADwB7DRI+Af4BvjFIkfyc4AhXisCOBL42tgJskNOANqMNvsA5wKvGsQsAfb2WgnAocCvusC3gdEx+pwG/KR9XjaJa2oAuwPrdGFLJZ+gbyfwnfa93WsFANfogvrTbH19rETPbAfGeM0MoE0VpuCMDHIWqoz7ajUcAhwNnKXKqNHS9bqQ9WnJMBQyqpSDrQ4wA9hEc+CuLIToer9QWYcFVT5oDLYBeA54ugGT/4ddZs1/L/OfVm/VzO8B7Gr1eU1lnWKTMVMrtgDneQ0MJUUwzSgbDfypHmk7cJKa5PeAA4GJwA/AW5asp2xZvpL6Viumeg0OUYI619lG2f7Al1q+Efjb2O2yo7bq78csWW9oea9ZKOwJ+jNMUhTxtcCE9EuNPZaMI3jYKu8APiQcD1gebJvhpP1veuUR0cLFGSY5WWUsTb/U2GMdrmPJrh5q1e0LzAfu0DafAXcClwfImaRtPrUrLtKKRzNM8l6VcUtaGQnH83fCzJD6cVr/cYSM17XNzakJoaK55wGzrPL1KkM8wOHq9JzjOQIwxTi9jk1KCHCp1v8suyoVIVTIkHODYK2l4QWbxawBx2heXOMLMq08fC67AM/4cxGTGpcQoFtddsGFQcJrEkKFjOe13Y/i5VnOnGCJUdZnkHJ+VgJC5iTH+k+C3O8wQuTcoz6W4O4wwXEIuU7biDk7KsSWz7bK5xl9RnoOAIwH/gJ2AAfFIGSWlq8JPSHHJOQ4dXwED8mWNcytb7o6jfZjgM+Nu4rd8iIhYG7+HyKKdrmmd7TsD6NsuXHsnxYlMK4O6TVIma9lEzS/0XKSfDJkYsPzpWDAvOaSHMdGCUxiZXqVlFWav0H7LrC2sdxvrnRNho4X5YyFIdw9SOqHACP9hRqub5WJ1UemymlyBWBZCkIuiRKYyjGjcrrcrpakbtf7ckmUkIzNtpnOi5BhwFfAk14dodcUSTE9SmBm172eAD5IQUhfKxPSl5AM8VnGpyaEihntjkidVvv2Gu3zTF16jL8KeAF4N4SEreqHiM8yqRbDtQj5qAbjYmKPMNqvplhMtkx+EDZE77NkhNwEvB+RxOztZ7n5q2v0ySvJEf4Q6z7k+wBCFuVGSLNBzjTGe1zRF7cm8olajZC4F0ShKAlJrkPmWCdGV+kl4Hhj3Ctj9HkWOLjQHcLAiByXuM0YV+4s4mBK0YSMAk4uIPWYlzZ6iKzVZ6J/N1MYIc2IkpCCH5kR+q40yfavCm/SVxM9Dh6z7noQsi6FcpRbtWGGjBdxhzOLJuTGFCZ0gRWKMMORqV4WFBJV6hALJSEWSkIslIRYKAlxRMgWDTBphbQpD0JaESUheRByNsVgm36N0OHYczWxKosCco0VxpinUwwWJiZEJ7i2gMn9puRL2NUjFINT0xJyot5Qu8ZOI4jWNbKFiALTNTypFfDmgOjClKR0AY8Dv9OcWKNx+1VB/rmAyluw9hRJvpDMgnEpxy0kQCfLl0pp0eG1EigJ8Tx9HTBXb8r8MO+0WATcD1wB7Ok1G4CpwL+4wUonCtIlCA9SyQs9XjMB9x8tXuw1EygJqQbwisPdsSMyDLsRQeWwNtZRGlHv9XmDGf8BEALL+2zqYtcAAAAASUVORK5CYII=" alt="external-creative-design-fintech-smashingstocks-mixed-smashing-stocks">
+          Наши решения
         </a>
       </li>
-      <li>
+      <li class="main-menu-item">
         <a style="display: flex; align-items: center;" href="#contacts">
           <img style="width: 25px; margin-right: 5px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEWUlEQVR4nO2ZW6hVVRSGd6e8dTHrUGIdFSwrUztBiVYkZD0YgkIPllmRJyk0u4kRRg/aRZ+6KGVaYooKekpMIdRjQjfCC0V2O2j1YEej1LxUSpr6xaB/4WSz1t5zzbm37Yf9w+LA2f/4xxhzrTXnGGMVCnXUUUdVAVwJjAdmAnOAV4BngRHAOYVaBnA20AJ8S2n8CAxPsW8ExgDPAa8BLwOPAVecySR6AZ87we4BWoFXgam67M7s0O9HgTeAm4EmYDlwLCPxk8BcoFO1k+jhBLgTGAWclcFt0Eq7+Nv52wa8DkxT8m8BB/T7H8A7QO9qJbJYjr4ALvTgWzLXAk8Ce2X7C9Azg98EfO8kvg8YWOkk+gAngH+A5gD7fs6Kj/TYQNrE/TLrrgcBmCzhVREaM6SxwoPbDfhV/FtDfaYJr5boQxEaA6Txkyd/rvhPh/pME90s0WGR27a96KeAcz34j8jnwlCfaaI/SPSaSJ3D0unhwZ0g7pIYn8Wi7RK9OlLniHS6e3CfEHdejM9i0Y8lOjxC4yJpHPHkzxH/mVCfaaIrJHpPhMZQaXztyd8q/m2hPtNErRA0zI7QsFPc8KYH93ydWcd9NoY8QYxUEJsiNNZKY7wHd4RTzjSF+kwTvtOpg3KX50Bn4JA0RnnaLBF/QlDQGaIfJS9eSMlgNsB0aXzoabNS/PuCgi6z/TZHaDRL4zsP7otqAay+6xPqM034XQXREqExURqtZXjddfpbEs+H+ssSf0BB7LL+IcB+qmwN95fhjhZvXVTQJeqk97RSVmY05LBtcEqTVaZVhv+BuE9VJPgMJ1/JiXfDAwyWTbsH925x/wQujQ7Yo2yYlcNmtmzme3APiDslOtgyjm6QI3N4iQf/YuB32dziwf9N3LLa0QDelzM7WxpL8C4ANoi70VP7Z/GrM3gocna504ZmNlrWu4hzyHdmxX+zMMOAigZdwqFNUgw3leDYBMW7tTUA62VjrXW3QrUBfONxR5IevSOH7nWq59AM7V6gS8UCT3FoAzrD4BKc3uLsDdhQ2jkN2wBmAX0rErzjqCfwV7mX0oZ4OkCP5a2XgE7Ag8A2JyErWZbFzg3cw227hNd78FuTwxC4MaKzXOrMjE9oHNs5RGygdXbq2NCj1cvDrtGZ2lsAi4DrI6ad86Vj2OS1IVgDBdwlA3tEkon5Yp9xTtF58rZsE3wKjA2ZvAO3OwfnolLErlYiONUqGuMsAAbldVy0i81z3i/DbisOgfNyag3R02ELPCSti2vRN48E9lg8bqOc0AQyNoFHnXct2ZnGBX4dOD3MsBUB1jjCm8tNzSsB4A7gM8dvK/Cw57Uw2UgSsS7AJ/rnfiulq51ASkL2JFjpHoLjiYh9xzN0AFed6SSK3qEO54PQAt/LjPtrEGY7ytD/KwknmWGKxeZZl+UxfEEr0FaoEQAbFdNLeYy2yGhSoUYATFJM2/IYHaR2cThPIrWOroE3to46ChXAv41Q2V+Zy2u8AAAAAElFTkSuQmCC" alt="user-group-man-man">
           Контакты
         </a>
-    </li>
-      <li >
+      </li>
+      <li class="main-menu-item">
         <!-- <img style="width: 25px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACoElEQVR4nO2az4uNURjHzx2GohhkzIyNTBGllJT/YaRko/xIVkrMZoalBRbWbFgpUZSymgWujYURiiE2lB8LSjKGMiN89PB963R7zX3fe995z3nrflf3nvN9zn0+nXvPOc97rnMdddRRSwK2A3XgG+H1VbkM5YU4Rbw6mWcmTNPACNDvAgvoB0aVE5lmBrgj84iLTMAx5VbPYrbvo6nPRSagT7lNZTH/Vc4PSGaxXd0tLL8WQe4XBEJokJXAhEJftLJARAFSBEw0IO3CRAViAnqBpxrmgaswyBrgpYYZryQIsB54qyFuAz2VAwE2AR8UfgnozhkfHgQYBD4q9CLQlSc+ChBgCfBcYddbgYgF5LxCHgGLssZFBQJsA34D34ENGWPW6Uhzz5bqWEDG8hQ7wA5gMvkM7Te9QUH4t1+gY//yDP4Tmj3TTeCZDxMSZFjWK018NeCsvAZyBpin5H2YYCBXZd3XxGeJm34Cexv6fJhgIEkCm2fxHPIg9mQ4mxEC5JOsy/7Tv8V7WHCgyVgGMw7cCgEyI+uClL4u4KH6z7kCxRyAJMvo4pS+3ep7l9YfG8iErBtT+mx5NR1uI+fSQK7JeiRluU0es65wFQDZJautODWvvUftnwvIuxSQhd7R/aDX3q2Nb8ZVAcRky6rsk/5vBXil9kFXEZCa98N+Y6Wu2i+obbiA3OceRP6lqkXQJrkT2Kr3r63wyjpWUBDveZbVF4luAI/1eqzIvYS5BFHcfOC0zlWNspk5asVXO1VkKSBe/FqVvz9SgNoau1QQb5xVwH7gMvAEeA/8KhNkSt7gV26NAlYrty9ZzHZ7ahp1kQk4nufqbUjmad3ZDZSS5ew5DQgiKR2yXVPbUxGqfj3dMDN173K0en8Y6KijjlyiP9DXNC3p6svhAAAAAElFTkSuQmCC" alt="shortcut"> -->
         <a style="display: flex; align-items: center;" href="https://www.docsvision.com/o-vendore-docsvision.html?utm_source=ActiveCampaign&utm_medium=email&utm_content=%D0%9F%D0%B0%D1%80%D1%82%D0%BD%D1%91%D1%80%D0%B0%D0%BC+Docsvision%3A+%D0%BA%D0%B0%D0%BA+%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%B8%D1%82%D1%8C+%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5+%D0%B8+%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF%D1%8B%3F&utm_campaign=%D0%9F%D0%B0%D1%80%D1%82%D0%BD%D1%91%D1%80%D0%B0%D0%BC++%D0%9E+%D0%B2%D0%B5%D0%BD%D0%B4%D0%BE%D1%80%D0%B5" target="_blank">
           <img style="width: 25px; margin-right: 5px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA60lEQVR4nO3avQ6CMBSG4d6ExEviunVg0EkG93ohr8E4GAPY0rR8reedGc6TE/4CzlmWFRXQAw9089OMIZDpQPV8COSVE43Q+QzS+kaAc+L5MLQCQQISG3AAblVDgA4Y3yOMVUK+NnEHjtVB5hBuYRZZyBKiKsgaohrIL0QVkBCEPCQUIQ2JQchCYhGSkC0IOchWhBQkBSEDmXkA7Da+Apx2g6RuYq1ikJyIYpDciCKQEojskFKIrJCSiNyQS8olVgkyANcSiF1uiLnCIGJhGxEL24hY2EbE4h834mnk83QvjvFBPwxYluU+ewLCwHn/c4Q4MAAAAABJRU5ErkJggg==" alt="external-link-squared">
@@ -36,7 +64,7 @@
           О Docsvision
         </a>
       </li>
-      <li>
+      <li class="main-menu-item">
         <a style="display: flex; align-items: center;" href="https://docsvision.com/price/" target="_blank">
           <img style="width: 25px; margin-right: 5px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA60lEQVR4nO3avQ6CMBSG4d6ExEviunVg0EkG93ohr8E4GAPY0rR8reedGc6TE/4CzlmWFRXQAw9089OMIZDpQPV8COSVE43Q+QzS+kaAc+L5MLQCQQISG3AAblVDgA4Y3yOMVUK+NnEHjtVB5hBuYRZZyBKiKsgaohrIL0QVkBCEPCQUIQ2JQchCYhGSkC0IOchWhBQkBSEDmXkA7Da+Apx2g6RuYq1ikJyIYpDciCKQEojskFKIrJCSiNyQS8olVgkyANcSiF1uiLnCIGJhGxEL24hY2EbE4h834mnk83QvjvFBPwxYluU+ewLCwHn/c4Q4MAAAAABJRU5ErkJggg==" alt="external-link-squared">        
 
@@ -136,7 +164,7 @@
           </div>
         </div>
       </div>
-      <div class="block">
+      <div id="about-us" class="block">
         <h3 class="block-title" style="text-align: center; margin-bottom: 1rem;">ПОЧЕМУ МЫ</h3>
         <div>
           <div style="display: flex; flex-wrap: wrap;">
@@ -193,7 +221,7 @@
           </div>
         </div>
       </div>
-      <div class="block-services block">
+      <div id="services" class="block-services block">
         <h3 class="block-title" style="text-align: center; margin-bottom: 1rem;">УСЛУГИ</h3>
         <ul class="block-services-items">
           <li class="services-item">
@@ -280,7 +308,7 @@
         </ul>
       </div>
 
-      <div class="block-customers block">
+      <div id="customers" class="block-customers block">
         <h3 class="block-title" style="text-align: center; margin-bottom: 1rem;">НАШИ ЗАКАЗЧИКИ</h3>
         <div class="carousel">
           <div class="carousel-inner">
@@ -386,6 +414,9 @@
       <div>
         <!-- <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A2e4942830ac7d50688e93b147ac15c3fa85ca169ee58419fa6ecc370687f1888&amp;source=constructor" width="500" height="400" frameborder="0"></iframe> -->
         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A2e4942830ac7d50688e93b147ac15c3fa85ca169ee58419fa6ecc370687f1888&amp;source=constructor" width="700" height="250" frameborder="0"></iframe>    
+        <div class="footer-logo_block">
+          <img class="footer-logo_dv" src="./images/dv_logo.png" alt="Логотип Docsvision">
+        </div>
       </div>
     </div>
     <div>
@@ -393,6 +424,6 @@
         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD0ElEQVR4nO2aS08UQRDH1ywCBqO8IZ70SCDop0CIEMQbqDcIXHgEvfI4iycTEj8Hhhg1YvAVUFSMBEXw5ONgwJuIAfMzxVabzjI7uzM9uLuESiY72e75V/+nq7qqqycWO5QDKkA5cBGYAKaBD8AP4Ldecv9e26RPO1AWywUBioGrwH3gD8FlB7gHXAGKskHgGHAN+GYNaguYAUZ0ZurkjQNH9SrT/6RtFHikzxj5CgzLy/lfJC4An6wBvAS6gZMhsEqBHmDBwlsDWvbbjG5bCl8BTRHiNwNvLPzJyGcHqNWBi/wE+oF4pEoSeuLAILBpzXZNVOBndLrRVachEmB/nY3AiupclTG4AlZZgC+AyshGm153GfBUdYtP1rr4hDGn50BJ5KNNP4YSYM4ys+A+Yzm2mFP5vow0s3FUWFYxGWaJNY7d4Giai8BruXf0mU0dU3OQYGfiRL+D8mrgnbWcyn21A96Q5fzpTQy4bsWJeEQknMkABTq7IkOZOLhJO5ocSCxZ/kXS/ZIDmRbF+OKbm2nytrtChFRUk0RCAqmR2iQygQMdcMRaSbv8Oj7QTt2O5iQp/Cn9f1esPkvJfQLq6dXn7/rtJ3Y0Iw2UAOrbXrZnwmr7R8Tqa2ZmOWigIxEoZX+z7TlOoEPBHzqY0563nEwkipkBZvXZNq/Gm9o4EhD0rddM+BHxmJnFgDrH9bkbXo2yBRVpDwg6r+m3p4mkImKRkSV1LqDODoW949X4URvrgoBmoDQlEQfMemOWXo0b2lieB0QqFfa7V6OsBCKFeUCkSGG3DjSRjTwyrSo/0zowzj4dZvnNEpFLCjvlFxBH84DIuF9AlAqgyEweEJlV2NZUyZhJGktzlQiJ5NYkjSdSdZKCskhPDhPpU8hpv06XtdNCLhIhsbGSQoZIZ7pAI9tIkfM5SKRV4T6nPYbQ0j7KPJ4rREgUH8yWYSCTB4qtWu9gDhEZVqiVjA+FrGqFFMUaHQfwBHjsiHEO+BWquqPnE+YNVMSyJCTyKinKidwKA1CshWO0kJyNIvZx3YGiv0Uub0OKA+ZYIXT9NmTge6a615wPfPSgZ9Uys7ORjdbfJ1ZVp2Tlp6MCrrHMbFMLygWRgO9dYoctx553KXz7+YxZANDqR0uEEVuOMkyc2HXsfT1719NXM+1oLbY3zFcM6gd9VtphTCmy0+JMZmfISmfQjFTS6zGtO9XraVOhXnLfoJuiMe1r6gQm7RjI1hcQkpt1SUFZtwBBZVt3pp1ZIeAlUlCWWqzs2qQCqOXQdeujmnUtWk9pn7aU+4lDieW//AWxeiC65qdqxwAAAABJRU5ErkJggg==" alt="circled-up-2">
       </a>
     </div>
-    </footer>
+  </footer>
 </body>
 </html>

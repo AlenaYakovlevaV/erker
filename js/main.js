@@ -95,3 +95,14 @@ const panaceyaText = ``;
 const rnText = ``;
 
 const volmaText = ``;
+
+const popupMenu = document.querySelector('.popup-menu');
+const mainTabItem = document.querySelector('#main-tab');
+
+mainTabItem.addEventListener('mouseover', () => {
+  popupMenu.classList.remove('hide');
+})
+
+mainTabItem.addEventListener('mouseout', () => {
+  popupMenu.classList.add('hide');
+})
